@@ -1,0 +1,40 @@
+
+.card-text{
+	color: black;
+	margin: center;
+	font-family: "Times New Roman", Times, serif;
+	font-style: italic;
+	font-size: 25px;
+}
+
+.card-title{
+	color: navy;
+	text-decoration: underline;
+	text-shadow: 2px 1px lavender;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 30px;
+
+}
+
+.btn{
+
+	margin: .5em .5em .5em .5em
+}
+
+.card{
+	margin-bottom: 50px;
+	border-width: 1px;
+	border-color: black;
+	border-radius: 25px; 
+	
+
+}
+
+.card-img-top{
+	height: 25vw;
+	width: 100%;
+	border-radius: 25px; 
+}
+
+
+

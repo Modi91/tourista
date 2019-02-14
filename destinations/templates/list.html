@@ -1,10 +1,32 @@
 {% extends "base.html" %} 
+{% load static %}
 
 {% block title %}List{% endblock title %}
 
 {% block content %}
 <br>
 <div class="row">
+	{% for destination in destinations %}
+	   
+		
+		<div class="col-12 col-sm-6 text-center">
+			<div class="card">
+			  <img class="card-img-top" src="{{destination.pretty_picture.url}}"  alt="Card image cap">
+			  <div class="card-body">
+			    <h5 class="card-title">{{destination.name}}</h5>
+			    <p class="card-text">{{destination.activities}}</p>
+			    <a href="{% url 'destination-detail' destination.id %}" class="btn btn-outline-secondary">Read More</a>
+			  </div>
+			</div>
+	    </div>
+	    
+	{% endfor %}
+</div>
+{% endblock content %}
+
+
+
+<!--<div class="row">
   {% for destination in destinations %}
   <a href="{% url 'destination-detail' destination.id %}">
     <img src="{{destination.pretty_picture.url}}" />
@@ -13,4 +35,3 @@
   </a>
   {% endfor %}
 </div>
-{% endblock content %}
